@@ -67,6 +67,17 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: all 0.75s ease-in-out;
+}
+header button {
+  transition: all 0.75s ease-in-out;
+}
+
+header.changeColor {
+  background-color: white;
+}
+header.changeColor button {
+  background-color: green;
 }
 
 .header-container {
@@ -254,6 +265,8 @@ h1 {
 
 .content-container aside {
   padding-inline-start: 3rem;
+  position: sticky;
+  top: 100px;
 }
 
 .category-container {
