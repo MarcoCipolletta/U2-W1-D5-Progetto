@@ -1,0 +1,184 @@
+/* BREAKPOINT STANDARD */
+
+/* 
+        - 0 ~ 575px         => MOBILE
+        - 576px ~ 767px     => SMALL (tablet)
+        - 768px ~ 991px     => MEDIUM (tablet horizontal)
+        - 992px ~ 1199px    => LARGE (small laptop)
+        - 1200px ~ 1399px   => X-LARGE (desktop)
+        - 1400px ~ infinite => XX-Large (big desktop)
+        
+        */
+
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/* .spectral-semibold {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* .roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* setting the base */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #191919;
+}
+.container {
+  max-width: 1300px;
+  margin-inline: auto;
+  padding-inline: 2.5rem;
+}
+header,
+.hero {
+  background-color: #ffc017;
+  border-bottom: 1px solid #191919;
+}
+button {
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 50px;
+  background-color: #191919;
+  color: white;
+  padding: 0.9rem 1.2rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  padding-block: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.header-container img {
+  width: 225px;
+}
+
+.header-container li {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  height: 465px;
+}
+
+.m-svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+h1 {
+  font-family: "Spectral", serif;
+  font-size: 7rem;
+}
+
+.hero-title p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  max-width: 520px;
+  padding-block: 2rem;
+}
+.hero-title button {
+  padding-inline: 3.5rem;
+}
+
+/* Trending */
+.trending {
+  border-bottom: 1px solid lightgray;
+}
+.trending-container {
+  padding-block: 3rem;
+}
+.trending h2 {
+  display: flex;
+  align-items: center;
+}
+
+.trending h2::before {
+  content: "";
+  background-image: url(../imgs/svg/trending.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 1rem;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+/* trending card */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+.trending-card {
+  flex: 1 0 33%;
+  display: flex;
+  gap: 25px;
+}
+
+.trending-card h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #bbbbbb;
+}
+
+.autor-article img {
+  width: 25px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.autor-article span {
+  font-weight: 500;
+}
+.autor-article span > span {
+  color: #757575;
+}
+
+.trending-card-detail p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-block: 1rem;
+}
+.readingTime {
+  color: #757575;
+}
+.readingTime + img {
+  vertical-align: middle;
+  width: 25px;
+}
