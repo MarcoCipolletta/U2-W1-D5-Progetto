@@ -112,6 +112,9 @@ header.changeColor button {
   right: 0;
   bottom: 0;
 }
+.m-svg svg g {
+  transition: all 0.75s ease-in-out;
+}
 
 h1 {
   font-family: "Spectral", serif;
@@ -265,8 +268,11 @@ h1 {
 
 .content-container aside {
   padding-inline-start: 3rem;
+  position: relative;
+}
+aside .positionSticky {
   position: sticky;
-  top: 100px;
+  top: 150px;
 }
 
 .category-container {
