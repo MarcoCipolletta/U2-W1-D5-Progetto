@@ -144,12 +144,12 @@ h1 {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 50px;
+  gap: 50px 25px;
 }
 .trending-card {
-  flex: 1 0 33%;
+  flex: 1 0 31%;
   display: flex;
-  gap: 25px;
+  gap: 10px;
 }
 
 .trending-card h3 {
@@ -165,6 +165,7 @@ h1 {
 }
 .autor-article span {
   font-weight: 500;
+  vertical-align: middle;
 }
 .autor-article span > span {
   color: #757575;
@@ -178,7 +179,71 @@ h1 {
 .readingTime {
   color: #757575;
 }
-.readingTime + img {
+.readingTime + img,
+.label + img {
   vertical-align: middle;
   width: 25px;
 }
+
+/* Content */
+
+.content-container {
+  display: flex;
+  padding-block: 5rem 2rem;
+}
+
+.content-container main {
+  flex-basis: 65%;
+}
+.content-container aside {
+  flex-basis: 35%;
+}
+
+/* content main */
+.content-wrapper main article {
+  width: 100%;
+  display: flex;
+  margin-bottom: 4rem;
+}
+.article-header {
+  flex-basis: 70%;
+  padding-right: 1.5rem;
+}
+.article-image {
+  flex-basis: 30%;
+  height: 162px;
+}
+.article-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-block: 1rem 0.25rem;
+}
+.article-header p {
+  font-size: 1.1rem;
+  color: #757575;
+  line-height: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.label {
+  background-color: #ebebeb;
+  color: #757575;
+  padding: 0.3rem 0.5rem;
+  border-radius: 50px;
+}
+.article-metadata {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article-metadata .save-icon img {
+  width: 32px;
+  vertical-align: middle;
+  text-align: center;
+}
+.article-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+/* content aside */
