@@ -27,3 +27,5 @@ const startRandomOpacityToggle = () => {
 
 startRandomOpacityToggle();
 startRandomOpacityToggle();
+startRandomOpacityToggle();
+startRandomOpacityToggle();
