@@ -56,6 +56,7 @@ button {
 h2 {
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 0.85rem;
   letter-spacing: 2px;
   margin-bottom: 1.5rem;
   position: relative;
@@ -166,6 +167,7 @@ h1 {
 .autor-article span {
   font-weight: 500;
   vertical-align: middle;
+  font-size: 0.75rem;
 }
 .autor-article span > span {
   color: #757575;
@@ -174,15 +176,16 @@ h1 {
 .trending-card-detail p {
   font-size: 1.1rem;
   font-weight: 700;
-  margin-block: 1rem;
+  margin-block: 0.75rem;
 }
 .readingTime {
   color: #757575;
+  font-size: 0.75rem;
 }
 .readingTime + img,
 .label + img {
   vertical-align: middle;
-  width: 25px;
+  width: 20px;
 }
 
 /* Content */
@@ -193,10 +196,10 @@ h1 {
 }
 
 .content-container main {
-  flex-basis: 65%;
+  flex-basis: 62%;
 }
 .content-container aside {
-  flex-basis: 35%;
+  flex-basis: 38%;
 }
 
 /* content main */
@@ -219,7 +222,7 @@ h1 {
   margin-block: 1rem 0.25rem;
 }
 .article-header p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #757575;
   line-height: 1.6rem;
   margin-bottom: 0.5rem;
@@ -228,6 +231,7 @@ h1 {
   background-color: #ebebeb;
   color: #757575;
   padding: 0.3rem 0.5rem;
+  font-size: 0.75rem;
   border-radius: 50px;
 }
 .article-metadata {
@@ -247,3 +251,34 @@ h1 {
 }
 
 /* content aside */
+
+.content-container aside {
+  padding-inline-start: 3rem;
+}
+
+.category-container {
+  border-bottom: 1px solid lightgray;
+}
+.category-itemss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+.category-item {
+  padding: 0.5rem;
+  border: 1px solid lightgray;
+  color: #757575;
+}
+footer ul {
+  margin-top: 1.25rem;
+}
+footer ul li {
+  display: inline-block;
+  padding: 0.5rem 1rem 0.5rem 0;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #757575;
+}
