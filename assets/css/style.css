@@ -26,6 +26,7 @@
 /* setting the base */
 * {
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -86,7 +87,7 @@ header.changeColor button {
   justify-content: space-between;
 }
 .header-container img {
-  width: 225px;
+  width: 220px;
 }
 
 .header-container li {
@@ -300,4 +301,37 @@ footer ul li {
 footer ul li a {
   text-decoration: none;
   color: #757575;
+}
+
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 991px) {
+  .header-container li {
+    font-size: 1rem;
+  }
+  .header-container button {
+    font-size: 1rem;
+  }
+  .container {
+    padding-inline: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  header nav ul li:nth-of-type(-n + 3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    padding-inline: 1rem;
+  }
+  header nav ul li:nth-of-type(4) {
+    display: none;
+  }
+  .header-container img {
+    width: 160px;
+  }
+  .header-container button {
+    font-size: 0.75rem;
+  }
 }
