@@ -112,6 +112,7 @@ header.changeColor button {
   top: 0;
   right: 0;
   bottom: 0;
+  /* transition: all 0.5s ease-in-out; */
 }
 .m-svg svg g {
   transition: all 0.75s ease-in-out;
@@ -304,6 +305,9 @@ footer ul li a {
 }
 
 @media screen and (max-width: 1199px) {
+  .m-svg {
+    right: -165px;
+  }
 }
 @media screen and (max-width: 991px) {
   .header-container li {
@@ -315,15 +319,28 @@ footer ul li a {
   .container {
     padding-inline: 2rem;
   }
+  h1 {
+    font-size: 5rem;
+  }
+  .hero-title p {
+    font-size: 1.6rem;
+    max-width: 500px;
+  }
+  .m-svg {
+    right: -200px;
+  }
 }
 @media screen and (max-width: 767px) {
   header nav ul li:nth-of-type(-n + 3) {
     display: none;
   }
+  .m-svg {
+    display: none;
+  }
 }
 @media screen and (max-width: 575px) {
   .container {
-    padding-inline: 1rem;
+    padding-inline: 1.25rem;
   }
   header nav ul li:nth-of-type(4) {
     display: none;
@@ -333,5 +350,12 @@ footer ul li a {
   }
   .header-container button {
     font-size: 0.75rem;
+  }
+  h1 {
+    font-size: 3.6rem;
+  }
+  .hero-title p {
+    font-size: 1.5rem;
+    max-width: 365px;
   }
 }
