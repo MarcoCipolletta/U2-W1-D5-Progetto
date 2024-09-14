@@ -67,17 +67,20 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+}
+header > div {
   transition: all 0.75s ease-in-out;
 }
 header button {
+  background-color: #191919;
   transition: all 0.75s ease-in-out;
 }
 
-header.changeColor {
-  background-color: white;
+header div.changeColor {
+  background-color: rgba(255, 255, 255, var(--opacity));
 }
-header.changeColor button {
-  background-color: green;
+header div button.changeColor {
+  background-color: rgba(0, 128, 0, var(--opacity));
 }
 
 .header-container {
