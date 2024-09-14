@@ -329,6 +329,17 @@ footer ul li a {
   .m-svg {
     right: -200px;
   }
+  .content-container {
+    flex-direction: column;
+  }
+  .content-container aside {
+    order: -1;
+    padding-inline-start: 0;
+    margin-bottom: 1rem;
+  }
+  .content-wrapper main article:last-of-type {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 767px) {
   header nav ul li:nth-of-type(-n + 3) {
@@ -362,5 +373,12 @@ footer ul li a {
   .hero-title p {
     font-size: 1.5rem;
     max-width: 365px;
+  }
+  .article-header h3 {
+    font-size: 1rem;
+  }
+  .article-header p {
+    font-size: 0.7rem;
+    line-height: 1.1rem;
   }
 }
